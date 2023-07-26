@@ -10,7 +10,7 @@ $result = mysqli_query($mysqli, "SELECT * FROM postingan ORDER BY id DESC");
 
 <!doctype html>
 <html lang="en" data-bs-theme="auto">
-  <head><script src="../assets/js/color-modes.js"></script>
+  <head><script src="assets/js/color-modes.js"></script>
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -25,7 +25,7 @@ $result = mysqli_query($mysqli, "SELECT * FROM postingan ORDER BY id DESC");
 
     
 
-<link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <style>
       .bd-placeholder-img {
@@ -167,10 +167,10 @@ $result = mysqli_query($mysqli, "SELECT * FROM postingan ORDER BY id DESC");
         <div class="col-sm-4 offset-md-1 py-4">
           <h4>Menu</h4>
           <ul class="list-unstyled">
-            <li><a href="/igkw3/add.php" class="text-white">Buat Postingan</a></li>
+            <li><a href="add.php" class="text-white">Buat Postingan</a></li>
             <?php
             if (isset($_SESSION['username'])) {
-              echo "<li><a href='/igkw3/logout.php' class='text-white'>Log Out</a></li>";
+              echo "<li><a href='logout.php' class='text-white'>Log Out</a></li>";
             }
             ?>
           </ul>
@@ -180,7 +180,7 @@ $result = mysqli_query($mysqli, "SELECT * FROM postingan ORDER BY id DESC");
   </div>
   <div class="navbar navbar-dark bg-dark shadow-sm">
     <div class="container">
-      <a href="/igkw3" class="navbar-brand d-flex align-items-center">
+      <a href="index.php" class="navbar-brand d-flex align-items-center">
         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true" class="me-2" viewBox="0 0 24 24"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
         <strong>IGKW3</strong>
       </a>
@@ -200,8 +200,8 @@ $result = mysqli_query($mysqli, "SELECT * FROM postingan ORDER BY id DESC");
         <h1 class='fw-light'>Instagram KW3</h1>
         <p class='lead text-body-secondary'>Ini merupakan website berbagi foto gratis untuk semua, mirip-mirip instagramlah kira-kira.</p>
         <p>
-        <a href='/igkw3/login.php' class='btn btn-primary my-2'>Login</a>
-        <a href='/igkw3/register.php' class='btn btn-secondary my-2'>Register</a>
+        <a href='login.php' class='btn btn-primary my-2'>Login</a>
+        <a href='register.php' class='btn btn-secondary my-2'>Register</a>
         </p>
       </div>
     </div>
@@ -247,7 +247,7 @@ $result = mysqli_query($mysqli, "SELECT * FROM postingan ORDER BY id DESC");
     <p class="mb-0">New to Bootstrap? <a href="https://getbootsrap.com">Visit the homepage</a> or read our <a href="https://getbootsrap.com">getting started guide</a>.</p>
   </div>
 </footer>
-<script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+<script src="assets/dist/js/bootstrap.bundle.min.js"></script>
 
     </body>
 </html>

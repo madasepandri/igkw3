@@ -9,7 +9,7 @@ if (!isset($_SESSION['username'])) {
 ?>
 <!doctype html>
 <html lang="en" data-bs-theme="auto">
-  <head><script src="../assets/js/color-modes.js"></script>
+  <head><script src="assets/js/color-modes.js"></script>
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -24,7 +24,7 @@ if (!isset($_SESSION['username'])) {
 
     
 
-<link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <style>
       .bd-placeholder-img {
@@ -166,8 +166,8 @@ if (!isset($_SESSION['username'])) {
         <div class="col-sm-4 offset-md-1 py-4">
           <h4>Menu</h4>
           <ul class="list-unstyled">
-            <li><a href="/igkw3/add.php" class="text-white">Buat Postingan</a></li>
-            <li><a href="/igkw3/logout.php" class="text-white">Log Out</a></li>
+            <li><a href="add.php" class="text-white">Buat Postingan</a></li>
+            <li><a href="logout.php" class="text-white">Log Out</a></li>
           </ul>
         </div>
       </div>
@@ -175,7 +175,7 @@ if (!isset($_SESSION['username'])) {
   </div>
   <div class="navbar navbar-dark bg-dark shadow-sm">
     <div class="container">
-      <a href="/igkw3" class="navbar-brand d-flex align-items-center">
+      <a href="index.php" class="navbar-brand d-flex align-items-center">
         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true" class="me-2" viewBox="0 0 24 24"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
         <strong>IGKW3</strong>
       </a>
@@ -236,7 +236,7 @@ if (!isset($_SESSION['username'])) {
     <form action="add.php" method="post" enctype="multipart/form-data">
         <div class="mb-3">
             <label for="exampleFormControlInput1" class="form-label">Judul</label>
-            <input type="text" class="form-control" id="exampleFormControlInput1" name="judul" placeholder="Judul postingan">
+            <input type="text" class="form-control" id="exampleFormControlInput1" name="judul" placeholder="Judul postingan" required>
         </div>
         <div class="mb-3">
             <label for="exampleFormControlTextarea2" class="form-label">Caption</label>
@@ -244,7 +244,7 @@ if (!isset($_SESSION['username'])) {
         </div>
         <div class="mb-3">
             <label for="exampleFormControlFile3" class="form-label">File</label>
-            <input type="file" class="form-control" id="exampleFormControlFile3" name="file" placeholder="Judul postingan">
+            <input type="file" class="form-control" id="exampleFormControlFile3" name="file" placeholder="Judul postingan" required>
         </div>
         <input class="btn btn-primary" type="submit" value="Submit" name="Submit">
     </form>
@@ -261,7 +261,7 @@ if (!isset($_SESSION['username'])) {
     <p class="mb-0">New to Bootstrap? <a href="https://getbootsrap.com">Visit the homepage</a> or read our <a href="https://getbootsrap.com">getting started guide</a>.</p>
   </div>
 </footer>
-<script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+<script src="assets/dist/js/bootstrap.bundle.min.js"></script>
 
     </body>
 </html>
